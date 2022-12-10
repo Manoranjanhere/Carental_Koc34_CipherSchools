@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fira+Sans:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,800&family=Poppins:wght@400;500;700;900&family=Righteous&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,900&family=Source+Code+Pro:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #b6bdbd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-container {
+    /* display: flex; */
+    height: 100vh;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0 3vw 0 3vw;
+    /* background-image: url(/images/car-background-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    width: 100%;
+    background-color: #35e269;
+    background:linear-gradient(2deg, #5ae7f1, #473b91);
+    position: relative;
+}
+
+
+.nav-bar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #000000;
+    position: relative;
+}
+
+.nav-bar-container .nav-logo img {
+    width: 12rem;
+    border-radius: 28px;
+    border: 4px solid rgb(0, 205, 113);
+    margin: 0 0 0 10px;
+}
+
+.nav-bar-container .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: #11e342; */
+}
+
+.nav-menu-items nav{
+    /* background-color: rgb(240, 29, 29); */
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.nav-menu-items nav li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    margin-right: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-menu-items nav li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #0fe7c3;
+}
+
+.nav-menu-items nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.signup-form {
+    /* background-color: #5ae7f1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.signup-form form .form-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 41px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 3px solid #08e85a;
+}
+
+.signup-form form {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #08e85a;
+    font-family: 'Roboto','Sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-name-details,
+.email-details,
+.username-details,
+.password-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 18px 0;
+}
+
+.full-name-details{
+    gap: 20px;
+}
+.email-details{
+    gap: 31px;
+}
+.username-details{
+    gap: 21px;
+}
+.password-details{
+    gap: 24px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    border: 2px solid #08e85a;
+    border-radius: 10px;
+    padding: 3px 3px 3px 10px;
+    font-weight: 700;
+    width: 150px;
+}
+
+.signup-button button {
+    padding: 2px 7px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 2px solid #32cd32;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.signup-button button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.signup-button button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000000;
+    border: 3px solid #0b0bee;
+}
+
+
+

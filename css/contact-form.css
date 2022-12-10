@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fira+Sans:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,800&family=Poppins:wght@400;500;700;900&family=Righteous&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,900&family=Source+Code+Pro:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #b6bdbd;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0fed8d;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #e10c0c; */
+    padding: 10px 0;
+    width: 80vw;
+}
+
+form h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 4px solid #000000;
+}
+form .contact-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.submit-button button {
+    padding: 2px 7px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 2px solid #32cd32;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.submit-button button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.submit-button button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000000;
+    border: 3px solid #0b0bee;
+}
