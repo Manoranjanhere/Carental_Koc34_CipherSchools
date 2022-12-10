@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar-container">
+            <div class="nav-logo">
+                <img src="/images/car-rental-logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav-menu-items">
+                <nav>
+                    <li><a href="/signup.html">Signup</a></li>
+                    <li><a href="/login.html">Login</a></li>
+                    <li>Manage Booking</li>
+                    <li>Popular Locations</li>
+                </nav>
+            </div>
+
+            <div class="nav-toggler nav-menu-toggler">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+        <div class="banner-section">
+            <h1>Car Hire - Search, Compare & Save</h1>
+            <div class="banner-img">
+                <img class="mySlides" src="/images/banner-img.jpg" alt="">
+                <img class="mySlides" src="/images/car-background-img.jpeg" alt="">
+            </div>
+
+        </div>
+
+        <div class="more-info-section">
+            <div class="left-section">
+                <div class="left-section-header">
+                    <h1>Let's find your ideal car</h1>
+                </div>
+                <div class="car-details">
+                    <form action="#">
+                        <!-- Location Details -->
+                        <div class="location-details">
+                            <label for="locations">Picup Location: </label>
+                            <select name="locations" id="locations">
+                                <option>Select a Location</option>
+                                <option value="bbsr">Bhubaneswar</option>
+                                <option value="ndl">New Delhi</option>
+                            </select>
+                        </div>
+
+                        <!-- Pickup Date Details -->
+                        <div class="picup-date-details">
+                            <label for="picup-date">Picup Date: </label>
+                            <input type="date" name="picup-date" id="picup-date">
+                        </div>
+
+                        <!-- Drop Off Date Details -->
+                        <div class="drop-off-date-details">
+                            <label for="drop-off-date">Drop Off Date: </label>
+                            <input type="date" name="drop-off-date" id="drop-off-date">
+                        </div>
+
+                        <!-- Purpose Of Rental Details -->
+                        <div class="purpose-of-rental-details">
+                            <label for="purpose-of-rental">Purpose of Rental: </label>
+
+                            <div class="rental-options">
+                                <div class="first-option">
+                                    <input type="radio" name="purpose-of-rental" id="business" value="Business">
+                                    <label for="html">Business</label>
+                                </div>
+
+                                <div class="second-option">
+                                    <input type="radio" name="purpose-of-rental" id="rental" value="rental">
+                                    <label for="html">Rental</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-section-header">
+                    <h1>Our Most Popular Destinations</h1>
+                </div>
+                <div class="popular-destinations">
+                    <span>Bangalore</span>
+                    <span>Noida</span>
+                    <span>Bhubaneswar</span>
+                    <span>New Delhi</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-section">
+            <div class="about-us-header">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-us-container">
+                <div class="company-logo">
+                    <img src="/images/car-rental-company-logo.jpeg" alt="company-logo">
+                </div>
+                <div class="team-members">
+                    <div class="team-member-header">
+                        <h1>Our Team</h1>
+                    </div>
+
+                    <div class="team-member-list">
+                        <div class="team-member-1">
+                            <h1>- Manoranjan Sahoo</h1>
+                            <p>Solution-driven web developer adept at contributing to highly collaborative
+                                work environment and finding solutions.</p>
+                        </div>
+                        <div class="team-member-2">
+                            <h1>- Kavya Shahi</h1>
+                            <p>Enthusiastic and challenge-driven Women ready to accept challenges and conquere it.</p>
+                        </div>
+                        <div class="team-member-3">
+                            <h1>- Penemetsa Yashwanth Varma</h1>
+                            <p>Enthusiastic and challenge-driven Person ready to accept challenges and conquere it.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-section">
+            <div class="footer-copyright">
+                <h1>©2022 Car Rental Platform All Rights Reserved</h1>
+            </div>
+            <div class="footer-contents">
+                <li> <a href="contact.html" target="_blank" >Contact Us</a></li>
+                <li>Support</li>
+                <li>T&C</li>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

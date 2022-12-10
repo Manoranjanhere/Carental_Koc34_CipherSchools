@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/sign-up-style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar-container">
+            <div class="nav-logo">
+                <img src="/images/car-rental-logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav-menu-items">
+                <nav>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/login.html">Login</a></li>
+                </nav>
+            </div>
+        </div>
+
+        <div class="signup-form-container">
+
+
+            <div class="signup-form">
+                <form action="#">
+                    <div class="form-header">
+                        <h1>Signup</h1>
+                    </div>
+                    <!-- Full Name Details -->
+                    <div class="full-name-details">
+                        <label for="full-name">Full Name: </label>
+                        <input type="text" name="full-name" id="full-name" required>
+                    </div>
+
+                    <!-- E-mail Details -->
+                    <div class="email-details">
+                        <label for="email-id">E-Mail ID: </label>
+                        <input type="email" name="email-id" id="email-id" required>
+                    </div>
+
+                    <!-- Username Details -->
+                    <div class="username-details">
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+
+                    <!-- Password Details -->
+                    <div class="password-details">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="signup-button">
+                        <button type="submit" id="sign-up" onclick="login_page()">Signup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="JS/signup.js"></script>
+</body>
+
+</html>
